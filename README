@@ -1,0 +1,7 @@
+Docker build instructions
+===========================================================
+
+1) docker build -t vxinitcrawl    //Build Container
+2) docker tag vxinitcrawl:latest 133556104811.dkr.ecr.us-east-1.amazonaws.com/vxinitcrawl:latest      //Tag latest build and send to ECR
+3) sudo docker push 133556104811.dkr.ecr.us-east-1.amazonaws.com/vxinitcrawl:latest
+

@@ -1,0 +1,22 @@
+﻿{
+  "taskDefinition": {
+    "family": "VenatrixDevelopment",
+    "containerDefinitions": [
+      {
+        "name": "vxinitcrawl",
+        "image": "133556104811.dkr.ecr.us-east-1.amazonaws.com/vxinitcrawl:latest",
+        "cpu": 100,
+        "portMappings": [
+          {
+            "protocol": "tcp",
+            "containerPort": 8080,
+            "hostPort": 80
+          }
+        ],
+        "memory": 128,
+        "essential": true
+      }
+    ]
+  }
+}
+
